@@ -1,0 +1,26 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  font-size: 22px;
+}
+
+//Подключение сетки
+@import "grid/init";
+
+.block {
+  padding: 20px;
+  background-color: #ddd;
+  border: 1px solid #aaa;
+  text-align: center;
+  height: 100%;
+}
+
+.row {
+  margin-bottom: 30px;
+}
