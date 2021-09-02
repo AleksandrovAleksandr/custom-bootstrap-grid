@@ -1,3 +1,6 @@
+//Подключение сетки
+@import 'grid/init';
+
 *,
 *::before,
 *::after {
@@ -10,17 +13,201 @@ body {
   font-size: 22px;
 }
 
+//Контейнер
+.container {
+  @include container;
+}
+
+.header {
+  @include row;
+  min-height: 90px;
+  margin-bottom: 130px;
+
+  @include bp(md) {
+    &__logo {
+      @include col(3);
+    }
+
+    &__nav {
+      @include col(9);
+    }
+  }
+}
+
+.promo {
+  @include row;
+  min-height: 460px;
+  margin-bottom: 110px;
+
+  @include bp(md) {
+    &__item {
+      @include col(6);
+    }
+  }
+}
+
+.clients {
+  @include row;
+  min-height: 80px;
+  margin-bottom: 170px;
+
+  @include bp(sm) {
+    &__item {
+      @include col(6);
+    }
+  }
+
+  @include bp(md) {
+    &__item {
+      @include col(4);
+    }
+  }
+
+  @include bp(lg) {
+    &__item {
+      @include col(2);
+    }
+  }
+}
+
+.pricing {
+  @include row;
+  min-height: 480px;
+  margin-bottom: 235px;
+
+  @include bp(md) {
+    &__item {
+      @include col(4);
+    }
+  }
+}
+
+.team {
+  @include row;
+  min-height: 360px;
+  margin-bottom: 180px;
+
+  @include bp(md) {
+    &__item {
+      @include col(6);
+    }
+  }
+
+  @include bp(lg) {
+    &__item {
+      @include col(3);
+    }
+  }
+}
+
+.footer {
+  @include row;
+  min-height: 380px;
+
+  @include bp(md) {
+    &__social {
+      @include col(6);
+    }
+
+    &__contact {
+      @include col(6);
+    }
+
+    &__feedback {
+      @include col(12);
+    }
+  }
+
+  @include bp(lg) {
+    &__social {
+      @include col(4);
+    }
+
+    &__contact {
+      @include col(3);
+    }
+
+    &__feedback {
+      @include col(5);
+    }
+  }
+}
+
 //Подключение сетки
-@import "grid/init";
+// @import './grid/mygrid.scss';
 
-.block {
-  padding: 20px;
-  background-color: #ddd;
-  border: 1px solid #aaa;
-  text-align: center;
-  height: 100%;
-}
+// .block {
+//   padding: 20px;
+//   background-color: #ddd;
+//   border: 1px solid #aaa;
+//   text-align: center;
+//   height: 100%;
+// }
 
-.row {
-  margin-bottom: 30px;
-}
+// .container {
+//   @include make-container();
+//   max-width: 1340px;
+// }
+
+// .my-row {
+//   @include make-row();
+
+//   & > * {
+//     @include make-col-ready();
+//   }
+// }
+
+// .header {
+//   @extend .my-row;
+//   min-height: 90px;
+//   margin-bottom: 130px;
+
+//   &__logo {
+//     @include make-col(3);
+//   }
+
+//   &__nav {
+//     @include make-col(9);
+//   }
+// }
+
+// .promo {
+//   @extend .my-row;
+//   min-height: 460px;
+//   margin-bottom: 110px;
+
+//   &__item {
+//     @include make-col(6);
+//   }
+// }
+
+// .clients {
+//   @extend .my-row;
+//   min-height: 80px;
+//   margin-bottom: 170px;
+
+//   &__item {
+//     @include make-col(2);
+//   }
+// }
+
+// .pricing {
+//   @extend .my-row;
+//   min-height: 480px;
+//   margin-bottom: 235px;
+
+//   &__item {
+//     @include make-col(4);
+//   }
+// }
+
+// .team {
+//   @extend .my-row;
+//   min-height: 360px;
+//   margin-bottom: 180px;
+// }
+
+// .footer {
+//   @extend .my-row;
+//   min-height: 380px;
+// }

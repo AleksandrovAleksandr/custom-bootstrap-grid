@@ -15,93 +15,192 @@ body {
   max-width: 1140px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid #ddd;
 }
 
-.row {
+.header {
   display: flex;
   flex-wrap: wrap;
   margin-left: -15px;
   margin-right: -15px;
+  min-height: 90px;
+  margin-bottom: 130px;
 }
 
-.row > * {
+.header > * {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 15px;
   margin-left: 15px;
   margin-right: 15px;
+  outline: 2px solid rgba(255, 177, 45, 0.5);
 }
 
-.col {
-  flex: 1 0 0%;
+.promo {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  min-height: 460px;
+  margin-bottom: 110px;
 }
 
-.col-1 {
-  flex: 0 0 auto;
-  width: calc(8.33333% - 30px);
+.promo > * {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  outline: 2px solid rgba(255, 177, 45, 0.5);
 }
 
-.col-2 {
-  flex: 0 0 auto;
-  width: calc(16.66667% - 30px);
+.clients {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  min-height: 80px;
+  margin-bottom: 170px;
 }
 
-.col-3 {
-  flex: 0 0 auto;
-  width: calc(25% - 30px);
+.clients > * {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  outline: 2px solid rgba(255, 177, 45, 0.5);
 }
 
-.col-4 {
-  flex: 0 0 auto;
-  width: calc(33.33333% - 30px);
+.pricing {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  min-height: 480px;
+  margin-bottom: 235px;
 }
 
-.col-5 {
-  flex: 0 0 auto;
-  width: calc(41.66667% - 30px);
+.pricing > * {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  outline: 2px solid rgba(255, 177, 45, 0.5);
 }
 
-.col-6 {
-  flex: 0 0 auto;
-  width: calc(50% - 30px);
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  min-height: 360px;
+  margin-bottom: 180px;
 }
 
-.col-7 {
-  flex: 0 0 auto;
-  width: calc(58.33333% - 30px);
+.team > * {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  outline: 2px solid rgba(255, 177, 45, 0.5);
 }
 
-.col-8 {
-  flex: 0 0 auto;
-  width: calc(66.66667% - 30px);
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  min-height: 380px;
 }
 
-.col-9 {
-  flex: 0 0 auto;
-  width: calc(75% - 30px);
+.footer > * {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  outline: 2px solid rgba(255, 177, 45, 0.5);
 }
 
-.col-10 {
-  flex: 0 0 auto;
-  width: calc(83.33333% - 30px);
+@media (min-width: 576px) {
+  .clients__item {
+    flex: 0 0 auto;
+    width: calc(50% - 30px);
+  }
 }
 
-.col-11 {
-  flex: 0 0 auto;
-  width: calc(91.66667% - 30px);
+@media (min-width: 768px) {
+  .header__logo {
+    flex: 0 0 auto;
+    width: calc(25% - 30px);
+  }
+
+  .header__nav {
+    flex: 0 0 auto;
+    width: calc(75% - 30px);
+  }
+
+  .promo__item {
+    flex: 0 0 auto;
+    width: calc(50% - 30px);
+  }
+
+  .clients__item {
+    flex: 0 0 auto;
+    width: calc(33.33333% - 30px);
+  }
+
+  .pricing__item {
+    flex: 0 0 auto;
+    width: calc(33.33333% - 30px);
+  }
+
+  .team__item {
+    flex: 0 0 auto;
+    width: calc(50% - 30px);
+  }
+
+  .footer__social {
+    flex: 0 0 auto;
+    width: calc(50% - 30px);
+  }
+
+  .footer__contact {
+    flex: 0 0 auto;
+    width: calc(50% - 30px);
+  }
+
+  .footer__feedback {
+    flex: 0 0 auto;
+    width: calc(100% - 30px);
+  }
 }
 
-.col-12 {
-  flex: 0 0 auto;
-  width: calc(100% - 30px);
-}
+@media (min-width: 992px) {
+  .clients__item {
+    flex: 0 0 auto;
+    width: calc(16.66667% - 30px);
+  }
 
-.block {
-  padding: 20px;
-  background-color: #ddd;
-  border: 1px solid #aaa;
-  text-align: center;
-  height: 100%;
-}
+  .team__item {
+    flex: 0 0 auto;
+    width: calc(25% - 30px);
+  }
 
-.row {
-  margin-bottom: 30px;
+  .footer__social {
+    flex: 0 0 auto;
+    width: calc(33.33333% - 30px);
+  }
+
+  .footer__contact {
+    flex: 0 0 auto;
+    width: calc(25% - 30px);
+  }
+
+  .footer__feedback {
+    flex: 0 0 auto;
+    width: calc(41.66667% - 30px);
+  }
 }

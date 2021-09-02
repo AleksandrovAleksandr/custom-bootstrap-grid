@@ -1,0 +1,25 @@
+//Количество колонок
+$grid-columns: 15;
+
+//Желоба сетки
+$grid-gutter-width: 30px;
+
+//Контрольные точки
+$grid-breakpoints: (
+  ph: 0,
+  tb: 750px,
+  lp: 950px,
+  dt: 1200px,
+);
+
+$container-max-widths: (
+  tb: 700px,
+  lp: 900px,
+  dt: 1100px,
+);
+//Подключение сетки
+@import 'functions';
+@import 'variables';
+@import 'mixins/breakpoints';
+@import 'mixins/container';
+@import 'mixins/grid';
